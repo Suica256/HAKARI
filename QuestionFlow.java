@@ -68,7 +68,7 @@ class QuestionFlow {
         // ガジェット・ゲーム・美容品のみ永続性を聞く
         if (req.genre.equals("GADGET") || req.genre.equals("GAME") || req.genre.equals("BEAUTY")) {
             int longevityChoice = askMenu("どのくらい続きそうですか？（永続性）",
-                                           "1ヶ月未満", "半年くらい", "1〜2年", "3〜5年", "5年以上");
+                                           "1ヶ月未満", "半年くらい", "1~2年", "3~5年", "5年以上");
             if      (longevityChoice == 1) req.longevity = "MONTH";
             else if (longevityChoice == 2) req.longevity = "HALF_YEAR";
             else if (longevityChoice == 3) req.longevity = "ONE_TWO_YEARS";
