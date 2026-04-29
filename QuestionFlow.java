@@ -232,7 +232,7 @@ class QuestionFlow {
             } catch (NumberFormatException e) {
                 // 数字以外が入力された場合は何もせず、下のメッセージを表示する
             }
-            System.out.println("  ※ 1〜" + options.length + " の数字を入力してください");
+            System.out.println("  ※ 1~" + options.length + " の数字を入力してください");
         }
     }
 }
